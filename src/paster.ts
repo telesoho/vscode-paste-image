@@ -563,7 +563,7 @@ class Paster {
          } else if(platform == "win32") {
             for(var i = 0; i < type_array.length; i++) {
                 var type = type_array[i];
-                if(type == "PNG" || type=="Bitmap") {
+                if(type == "PNG" || type=="Bitmap" || type=="DeviceIndependentBitmap") {
                     content_type = ClipboardType.Image;
                     break;
                 } else if(type == "UnicodeText" || type == "Text" || type=="HTML Format") {
